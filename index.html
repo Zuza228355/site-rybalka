@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Obama Gamings</title>
+    <title>Obuma Gamings</title>
     <style>
         /* Подключение шрифта */
         @font-face {
@@ -10,25 +10,37 @@
             src: url('static/Scabber.ttf') format('truetype');
         }
 
+        /* Фон сайта */
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f5f5f5;
+            background-image: url('dog.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 0;
+            color: white;
+            font-family: 'Scabber', sans-serif;
         }
 
-        .text-blue{
+        /* Контейнер для выравнивания по центру */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .text-blue {
             font-size: 30px;
             color: rgb(0, 50, 0);
-            font-family: 'Scabber';
             margin: 20px 0;
         }
 
-        .download, .simple-text{
+        .download, .simple-text {
             font-size: 25px;
             margin: 10px 0;
         }
 
-        .text-small{
+        .text-small {
             font-size: 18px;
             margin: 20px 0;
         }
@@ -37,6 +49,17 @@
             max-width: 80%;
             height: auto;
             margin: 10px 0;
+            border-radius: 10px;
+        }
+
+        a {
+            color: white;
+            font-size: 22px;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
 
         a.download-link {
@@ -46,79 +69,57 @@
             padding: 10px 20px;
             border-radius: 5px;
             font-weight: bold;
+            display: inline-block;
+            margin: 10px 0;
         }
 
-        a.download-link:hover {
+        .download-link:hover {
             background-color: #45a049;
         }
     </style>
 </head>
 <body>
-    <div class="text-blue">
-        <h1>Obama Gamings представляет!</h1>
-    </div>
-	
-	<a href="victoBuilds.html">
-	    <br>
-	    Victo билды
-	</a>
+    <div class="container">
 
-    <div class="simple-text">
-        Скачать игру:
-    </div>
+        <div class="text-blue">
+            <h1>Obuma Gamings представляет!</h1>
+        </div>
 
-    <div class="download">
-        <a href="https://raw.githubusercontent.com/Zuza228355/site-rybalka/main/static/Builds/Build_0.1.rar" download class="download-link">
-            Ultimate Fishing VI билд 0.1
-        </a>
-    </div>
-	
-	<a href="index2.html">
-	    Страница Ultimate Fishing VI build 0.2
-	</a>
+        <a href="victoBuilds.html">Victo билды</a>
 
-    <div class="simple-text">
-        <p>О нашей игре:</p>
-    </div>
+        <div class="simple-text">Скачать игру:</div>
 
-    <div class="simple-text">
-        Красивые виды
-    </div>
-    <div>
+        <div class="download">
+            <a href="https://raw.githubusercontent.com/Zuza228355/site-rybalka/main/static/Builds/Build_0.1.rar" 
+               download class="download-link">
+               Stranded Fishing VI билд 0.1
+            </a>
+        </div>
+
+        <a href="index2.html">Страница Stranded Fishing VI build 0.2</a>
+
+        <div class="simple-text"><p>О нашей игре:</p></div>
+
+        <div class="simple-text">Красивые виды</div>
         <img src="static/images/img1.png" alt="Красивые виды">
-    </div>
 
-    <div class="simple-text">
-        Проработанные модели
-    </div>
-    <div>
+        <div class="simple-text">Проработанные модели</div>
         <img src="static/images/img2.png" alt="Проработанные модели">
-    </div>
 
-    <div class="simple-text">
-        Проработанная физика
-    </div>
-    <div>
+        <div class="simple-text">Проработанная физика</div>
         <img src="static/images/img3.png" alt="Проработанная физика">
-    </div>
 
-    <div class="simple-text">
-        Глубокий сюжет
-    </div>
-    <div>
+        <div class="simple-text">Глубокий сюжет</div>
         <img src="static/images/img4.png" alt="Глубокий сюжет">
-    </div>
 
-    <div class="text-small">
-        При поддержке ООО Obama Gamings Corp.
-    </div>
-	
-	<a href="obama.html">
-	    Официальная страница Obama Gamings Corporation
-	</a>
+        <div class="text-small">
+            При поддержке ООО Obuma Gamings Corp.
+        </div>
 
-    <div>
-        <img src="static/images/ObamaImage.jpg" alt="Obama Gamings Logo">
+        <a href="obama.html">Официальная страница Obuma Gamings Corporation</a>
+
+        <img src="static/images/ObamaImage.jpg" alt="Obuma Gamings Logo">
+
     </div>
 </body>
 </html>
