@@ -4,16 +4,32 @@
     <meta charset="UTF-8">
     <title>Obama Gamings</title>
     <style>
-        /* Подключение шрифта */
         @font-face {
             font-family: 'Scabber';
             src: url('static/Scabber.ttf') format('truetype');
         }
 
+        /* Фон сайта */
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f5f5f5;
+            background-image: url('dog.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            display: flex;
+            justify-content: center;   /* центр по горизонтали */
+            align-items: center;       /* центр по вертикали */
+            min-height: 100vh;         /* растягиваем на полный экран */
+            margin: 0;
+            text-align: center;        /* центрируем текст */
+        }
+
+        /* Центрируем содержимое */
+        .container {
+            background: rgba(0, 0, 0, 0.5);  /* затемнение для читаемости (можно убрать) */
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 800px;
         }
 
         .text-blue{
@@ -48,77 +64,57 @@
             font-weight: bold;
         }
 
-        a.download-link:hover {
+        .download-link:hover {
             background-color: #45a049;
+        }
+
+        a {
+            color: white;
+            font-size: 20px;
         }
     </style>
 </head>
 <body>
-    <div class="text-blue">
-        <h1>Obuma Gamings представляет!</h1>
-    </div>
-	
-	<a href="victoBuilds.html">
-	    <br>
-	    Victo билды
-	</a>
-	
-	<a href="index.html">
-	    Страница Stranded Fishing VI build 0.1
-	</a>
+    <div class="container">
 
-    <div class="simple-text">
-        Скачать игру:
-    </div>
+        <div class="text-blue">
+            <h1>Obuma Gamings представляет!</h1>
+        </div>
 
-    <a href="https://raw.githubusercontent.com/Zuza228355/site-rybalka/main/static/Builds/Build_0.2.rar" download class="download-link">
-        Stranded Fishing VI билд 0.2
-    </a>
+        <a href="victoBuilds.html">Victo билды</a>
 
+        <div class="simple-text">Скачать игру:</div>
 
+        <div class="download">
+            <a href="https://raw.githubusercontent.com/Zuza228355/site-rybalka/main/static/Builds/Build_0.2.rar" download class="download-link">
+                Stranded Fishing VI 0.2
+            </a>
+        </div>
 
-    <div class="simple-text">
-        <p>О нашей игре:</p>
-    </div>
+        <a href="index2.html">Страница Stranded Fishing VI build 0.2</a>
 
-    <div class="simple-text">
-        Красивые виды
-    </div>
-    <div>
-        <img src="static/images/build2_img2.png" alt="Красивые виды">
-    </div>
+        <div class="simple-text"><p>О нашей игре:</p></div>
 
-    <div class="simple-text">
-        Добавлена урановая шахта
-    </div>
-    <div>
-        <img src="static/images/build2_img3.png" alt="Проработанные модели">
-    </div>
+        <div class="simple-text">Красивые виды</div>
+        <img src="static/images/img1.png">
 
-    <div class="simple-text">
-        Проработанная физика
-    </div>
-    <div>
-        <img src="static/images/build2_img1.png" alt="Проработанная физика">
-    </div>
+        <div class="simple-text">Проработанные модели</div>
+        <img src="static/images/img2.png">
 
-    <div class="simple-text">
-        Вкусная рыба
-    </div>
-    <div>
-        <img src="static/images/build2_img4.png" alt="Глубокий сюжет">
-    </div>
+        <div class="simple-text">Проработанная физика</div>
+        <img src="static/images/img3.png">
 
-    <div class="text-small">
-        При поддержке ООО Obuma Gamings Corp.
-    </div>
-	
-	<a href="obama.html">
-	    Официальная страница Obuma Gamings Corporation
-	</a>
+        <div class="simple-text">Глубокий сюжет</div>
+        <img src="static/images/img4.png">
 
-    <div>
-        <img src="static/images/ObamaImage.jpg" alt="Obama Gamings Logo">
+        <div class="text-small">
+            При поддержке ООО Obuma Gamings Corp.
+        </div>
+
+        <a href="obama.html">Официальная страница Obuma Gamings Corporation</a>
+
+        <img src="static/images/ObamaImage.jpg">
+
     </div>
 </body>
 </html>
