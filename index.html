@@ -10,23 +10,29 @@
         }
 
         body {
-			background-image: url('static/images/cover.jpg');
-			background-size: cover;       /* растягивает картинку на весь экран */
-			background-position: center;  /* центрирует */
-			background-repeat: no-repeat; /* убирает повтор */
-			background-attachment: fixed; /* фиксирует при скролле */
-			margin: 0;
+			display: flex;
+			justify-content: center; /* центр по горизонтали */
+			align-items: center;     /* центр по вертикали */
 			min-height: 100vh;
+			margin: 0;
+			background-image: url('static/images/cover.jpg');
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
 		}
 
 
 
+
         .container {
-            background: rgba(0, 0, 0, 0.5);
-            padding: 20px;
-            border-radius: 10px;
-            max-width: 800px;
-        }
+			background: rgba(0, 0, 0, 0.5);
+			padding: 20px;
+			border-radius: 10px;
+			max-width: 800px;
+			margin: 0 auto;
+		}
+
 
         .text-blue{
             font-size: 30px;
@@ -52,23 +58,23 @@
         }
 
         .button {
-			display: inline-block;       /* чтобы выглядело как кнопка */
-			padding: 12px 24px;          /* внутренние отступы */
-		font-size: 20px;             /* размер текста */
-		font-weight: bold;           /* жирный текст */
-		color: #fff;                 /* белый текст */
-		background-color: #4CAF50;   /* зелёный фон */
-		border: none;                /* убираем рамку */
-		border-radius: 8px;          /* скруглённые углы */
-		text-decoration: none;       /* убираем подчёркивание */
-		cursor: pointer;             /* курсор-рука */
-		transition: background-color 0.3s ease, transform 0.2s ease;
-	}
+			display: inline-block;       
+			padding: 12px 24px;
+			font-size: 20px;
+			font-weight: bold;
+			color: #fff;
+			background-color: #4CAF50;
+			border: none;
+			border-radius: 8px;
+			text-decoration: none;
+			cursor: pointer;
+			transition: background-color 0.3s ease, transform 0.2s ease;
+		}
 
-	.button:hover {
-		background-color: #45a049;   /* чуть темнее при наведении */
-		transform: scale(1.05);      /* лёгкое увеличение */
-	}
+		.button:hover {
+			background-color: #45a049;   /* чуть темнее при наведении */
+			transform: scale(1.05);      /* лёгкое увеличение */
+		}
 
 
         a {
