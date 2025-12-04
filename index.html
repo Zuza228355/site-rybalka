@@ -4,52 +4,83 @@
     <meta charset="UTF-8">
     <title>Mural Game Soft.</title>
     <style>
-		@font-face {
+        @font-face {
             font-family: 'Scabber';
             src: url('static/Scabber.ttf') format('truetype');
         }
-		
-		p {
-			font-size: 30px;
-			color: rgb(0, 0, 0);
-		}
-		
-		body {
+        
+        p {
+            font-size: 30px;
+            color: rgb(0, 0, 0);
+        }
+        
+        body {
             background-image: url('dog.jpg');
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
-
             display: flex;
             justify-content: center;
             align-items: center;    
             min-height: 100vh;      
             margin: 0;
-            text-align: center;     
+            text-align: center;
         }
-		
-		.main-text {
-			font-size: 30px;
-			color: rgb(0, 50, 0);
-			font-family: 'Scabber';
-		}
+        
+        .container {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 800px;
+        }
+        
+        .main-text {
+            font-size: 30px;
+            color: rgb(0, 50, 0);
+            font-family: 'Scabber';
+        }
+        
+        /* Стили для списка */
+        .game-list {
+            list-style-type: none; /* Убираем стандартные маркеры */
+            padding: 0;
+            margin: 20px 0;
+        }
+        
+        .game-list li {
+            margin: 10px 0;
+        }
+        
+        .game-list a {
+            font-size: 20px;
+            color: #ffffff;
+            text-decoration: none;
+            background: rgba(0, 50, 0, 0.7);
+            padding: 8px 15px;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background 0.3s;
+        }
+        
+        .game-list a:hover {
+            background: rgba(0, 80, 0, 0.9);
+        }
     </style>
 </head>
 <body>
-	<a href="RybalkaIndex1.html">Страница Stranded Fishing VI build 0.1</a>
-
-	<div class="main-text">
-		<h1>
-			Mural Game Soft.
-		</h1>
-	</div>
-
-    <div>
-		<br><br><br>
-		
-		<p>
-			я тронул дерьмо в бассейне центрального парка
-		</p>
-	</div>
+    <div class="container">
+        <div class="main-text">
+            <h1>Mural Game Soft.</h1>
+        </div>
+        
+        <ul class="game-list">
+            <li><a href="RybalkaIndex1.html">Stranded Fishing VI</a></li>
+            <li><a href="HalfIndex1.html">Half Dagger</a></li>
+        </ul>
+        
+        <div>
+            <p>я преобщился к дерьму в бассейне центрального парка</p>
+        </div>
+    </div>
 </body>
 </html>
