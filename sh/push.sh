@@ -1,0 +1,6 @@
+git add .
+
+read -p "Введите коммит: " commit
+commit=${commit:-Update}
+
+git commit -m "$commit"
