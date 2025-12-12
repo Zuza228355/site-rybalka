@@ -1,0 +1,10 @@
+# Vim / gVim
+*.swp
+*.swo
+*~
+*.un~
+*.un
+
+# Windows backup files
+Thumbs.db
+Desktop.ini
