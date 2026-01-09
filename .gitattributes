@@ -1,11 +1,12 @@
+# Git LFS для архивов
 *.rar filter=lfs diff=lfs merge=lfs -text
-static/Builds/*.rar filter=lfs diff=lfs merge=lfs -text
-*.exe filter=lfs diff=lfs merge=lfs -text
 *.zip filter=lfs diff=lfs merge=lfs -text
-*.7z filter=lfs diff=lfs merge=lfs -text
-*.tar.gz filter=lfs diff=lfs merge=lfs -text
-*.dll filter=lfs diff=lfs merge=lfs -text
-*.so filter=lfs diff=lfs merge=lfs -text
-*.dylib filter=lfs diff=lfs merge=lfs -text
+
+# HTML файлы - всегда текстовые
 *.html -text
-*.html -text
+
+# Остальные текстовые файлы
+*.css -text
+*.js -text
+*.txt -text
+*.md -text
