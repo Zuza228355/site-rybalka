@@ -31,7 +31,7 @@ if [ $STASHED -eq 1 ]; then
 fi
 
 echo -e "${YELLOW}=> Добавляю изменения...${RESET}"
-git add .
+git add -A
 
 read -p "Введите коммит (по умолчанию: Update): " commit
 commit=${commit:-Update}
