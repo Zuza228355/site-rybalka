@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mural Game Soft | Регламент</title>
+    <style>
+        @font-face {
+            font-family: 'Scabber';
+            /* Убедись, что путь к шрифту верный */
+            src: url('static/Scabber.ttf') format('truetype');
+            font-display: swap;
+        }
+
+        body {
+            margin: 0;
+            padding: 40px 20px;
+            background: #000 url('dog.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: rgb(0, 200, 0);
+        }
+
+        .container {
+            background: rgba(10, 10, 5, 0.85);
+            backdrop-filter: blur(5px);
+            padding: 40px;
+            border-radius: 15px;
+            max-width: 900px;
+            width: 100%;
+            border: 1px solid rgba(0, 200, 0, 0.3);
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+            text-align: left; /* Текст регламента лучше читать по левому краю */
+        }
+
+        h1 {
+            font-family: 'Scabber', serif;
+            color: rgb(0, 255, 0);
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .section {
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgba(0, 200, 0, 0.1);
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        h2 {
+            font-size: 22px;
+            color: rgb(0, 255, 0);
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        p, li {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 10px 0;
+            color: #b0ffb0; /* Чуть светлее для читаемости */
+        }
+
+        ul {
+            padding-left: 20px;
+            list-style-type: none;
+        }
+
+        ul li::before {
+            content: "•";
+            color: rgb(0, 255, 0);
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        /* Адаптивность для мобилок */
+        @media (max-width: 600px) {
+            .container { padding: 20px; }
+            h1 { font-size: 26px; }
+            h2 { font-size: 18px; }
+            p, li { font-size: 16px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Mural Games Software</h1>
+    
+    <div class="section">
+        <h2>Раздел 1: Регламент внутренних коммуникаций</h2>
+        <ul>
+            <li>Сотрудники обязуются присутствовать на всех плановых и оперативных совещаниях (созвонах), инициированных руководством или руководителями отделов.</li>
+            <li>Во время участия в видео- или аудиоконференциях сотрудники должны предоставлять развернутые, конструктивные и грамотные ответы по существу обсуждаемых вопросов.</li>
+            <li>В случае невозможности присутствия, сотрудник обязан заранее уведомить организатора и предоставить ответы в письменном виде до начала совещания.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Раздел 2: Профессиональные обязательства и этика</h2>
+        <ul>
+            <li>Своевременное и полное выполнение задач, зафиксированных в таск-трекерах.</li>
+            <li>Запрет на инициирование межличностных конфликтов. Все споры решаются путем конструктивного диалога.</li>
+            <li>Целевое использование корпоративного бюджета в строгом соответствии с договором.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Раздел 3: Конфиденциальность и IP</h2>
+        <ul>
+            <li><strong>Режим NDA:</strong> Запрет на разглашение информации о неанонсированных проектах, коде и финансах.</li>
+            <li><strong>Права на разработку:</strong> Весь код, ассеты и сценарии являются исключительной собственностью ООО Mural Games Software.</li>
+            <li>Публичная деятельность и интервью должны быть согласованы с руководством.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Раздел 4: Рабочий процесс и дисциплина</h2>
+        <ul>
+            <li><strong>Кибербезопасность:</strong> Использование только лицензионного ПО и соблюдение правил хранения паролей (Git, Unity Cloud).</li>
+            <li><strong>Сроки:</strong> Нарушение дедлайнов допустимо только при заблаговременном уведомлении с техническим обоснованием.</li>
+            <li><strong>Таск-трекинг:</strong> Ежедневная актуализация статусов задач.</li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
